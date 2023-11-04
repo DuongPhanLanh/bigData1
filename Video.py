@@ -7,8 +7,11 @@ frame_width = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height =int( cap.get( cv2.CAP_PROP_FRAME_HEIGHT))
 
 fourcc = cv2.VideoWriter_fourcc('X','V','I','D')
+# độ phân giải 720
+# out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1280,720))
 
-out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1280,720))
+# độ phân giải 1080
+out = cv2.VideoWriter("output.avi", fourcc, 5.0, (1920,1080))
 
 ret, frame1 = cap.read()
 ret, frame2 = cap.read()
