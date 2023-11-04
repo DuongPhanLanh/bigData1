@@ -34,7 +34,11 @@ while cap.isOpened():
                     1, (0, 0, 255), 3)
     #cv2.drawContours(frame1, contours, -1, (0, 255, 0), 2)
 
-    image = cv2.resize(frame1, (1280,720))
+    # độ phân giải ảnh là 720
+    # image = cv2.resize(frame1, (1280,720))
+
+     # độ phân giải ảnh là 1080
+    image = cv2.resize(frame1, (1920,1080))
     out.write(image)
     cv2.imshow("feed", frame1)
     frame1 = frame2
